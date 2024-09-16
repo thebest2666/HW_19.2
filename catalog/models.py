@@ -53,7 +53,7 @@ class Product(models.Model):
         help_text="Введите категорию продукта",
         related_name="products",
     )
-    price = models.CharField(
+    price = models.PositiveIntegerField(
         max_length=50, verbose_name="цена продукта", help_text="Введите цену продукта"
     )
     created_at = models.DateField(
@@ -67,6 +67,12 @@ class Product(models.Model):
         null=True,
         verbose_name="Дата последнего изменения",
         help_text="Введите дату последнего изменения",
+    )
+    manufactured_at = models.DateField(
+        blank=True,
+        null=True,
+        verbose_name="Дата производства изменения",
+        help_text="Введите дату производства изменения",
     )
 
     class Meta:
