@@ -1,0 +1,44 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "Ноутбуки",
+      "description": "Цифровая техника"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "Смартфоны",
+      "description": "Цифровая техника"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "DEXP Aquilon",
+      "description": "Цифровая техника",
+      "photo": "",
+      "category": 1,
+      "price": "16999",
+      "created_at": "2024-09-13",
+      "updated_at": "2024-09-13"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "Xiaomi Redmi 10C",
+      "description": "Цифровая техника",
+      "photo": "",
+      "category": 2,
+      "price": "6699",
+      "created_at": "2024-09-13",
+      "updated_at": "2024-09-13"
+    }
+  }
+]

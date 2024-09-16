@@ -4,8 +4,8 @@ from django.db import models
 class Category(models.Model):
     name = models.CharField(
         max_length=50,
-        verbose_name="Название продукта",
-        help_text="Введите название продукта",
+        verbose_name="Категория продукта",
+        help_text="Введите категорию продукта",
     )
     description = models.CharField(
         max_length=200,
